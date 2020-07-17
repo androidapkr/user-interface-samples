@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="DarkThemeApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
@@ -31,11 +31,28 @@
 
         <item name="fontFamily">@font/nunito_semi_bold</item>
 
-        <item name="preferenceCategoryTitleTextAppearance">@style/CustomPreferenceCategoryTitleAppearance</item>
+        <item name="preferenceCategoryTitleTextAppearance">
+            @style/CustomPreferenceCategoryTitleAppearance
+        </item>
+
+        <item name="materialButtonStyle">@style/MyButtonTheme</item>
+
+    </style>
+
+    <style name="DarkThemeApp.Base" parent="@style/DarkThemeApp">
+        <item name="android:windowLightNavigationBar" tools:targetApi="p">true</item>
+        <item name="android:navigationBarColor" tools:targetApi="p">@color/navigationBarColor
+        </item>
     </style>
 
     <style name="CustomPreferenceCategoryTitleAppearance" parent="TextAppearance.AppCompat.Caption">
         <item name="fontFamily">@font/nunito_semi_bold</item>
+    </style>
+
+    <style name="MyButtonTheme" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
     </style>
 
 </resources>

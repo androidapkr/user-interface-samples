@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2019 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,14 +14,10 @@
   ~ limitations under the License.
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- app palette -->
-    <color name="primary">#1976D2</color> <!-- Blue 700 -->
-    <color name="secondary">#F57C00</color> <!-- Orange 700 -->
-    <color name="error">#E53935</color> <!-- Red 600 -->
-    <color name="textColorPrimary">#FFFFFF</color>
-    <color name="textColorSecondary">#5E5E5E</color>
-    <color name="colorOnBackground">#FFFFFF</color>
-    <color name="navigationBarColor">#FFFFFF</color>
+    <style name="DarkThemeApp.Base" parent="@style/DarkThemeApp">
+        <item name="android:navigationBarColor" tools:targetApi="p">@color/navigationBarColor</item>
+    </style>
+
 </resources>
