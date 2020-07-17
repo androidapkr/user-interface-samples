@@ -29,8 +29,7 @@ public class DarkThemeApplication extends Application {
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 
-        SharedPreferences sharedPreferences =
-                PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         String themePref = sharedPreferences.getString("themePref", ThemeHelper.DEFAULT_MODE);
         ThemeHelper.applyTheme(themePref);
     }

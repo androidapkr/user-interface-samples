@@ -1,28 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (C) 2019 The Android Open Source Project
-  ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~
-  ~ http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  -->
-
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
     <PreferenceCategory
         app:key="theme_purchase"
         app:title="Purchase">
 
         <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themePurchase"
             app:title="Purchase Pro" />
+
         <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
+            app:key="themeTire1"
+            app:title="Subscribe Tire I" />
+
+        <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
+            app:key="themeTire2"
+            app:title="Subscribe Tire II" />
+
+        <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
+            app:key="themeTire3"
+            app:title="Subscribe Tire III" />
+
+        <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeRestore"
             app:title="Restore" />
 
@@ -37,17 +40,21 @@
             app:dialogTitle="Choose theme"
             app:entries="@array/themeListArray"
             app:entryValues="@array/themeEntryArray"
+            app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themePref"
             app:title="Choose theme"
             app:useSimpleSummaryProvider="true" />
 
         <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeFAQs"
             app:title="FAQs" />
         <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themePrivacyPolicy"
             app:title="Privacy &amp; Policy" />
         <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeOpenSourceLibrary"
             app:title="Open Source Library" />
 
@@ -58,15 +65,19 @@
         app:title="Social">
 
         <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeFacebook"
             app:title="Facebook" />
         <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeInstagram"
             app:title="Instagram" />
         <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeTwitter"
             app:title="Twitter" />
         <ListPreference
+            app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themePinterest"
             app:title="Pinterest" />
 
