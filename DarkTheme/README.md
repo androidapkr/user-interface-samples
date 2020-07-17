@@ -119,10 +119,6 @@ Pre-requisites
 - Android Build Tools v28.0.3
 - Android Support Repository
 
-Screenshots
--------------
-
-<img src="screenshots/light_1_welcome.png" height="400" alt="Screenshot"/> <img src="screenshots/light_2_preferences.png" height="400" alt="Screenshot"/> <img src="screenshots/light_3_settings.png" height="400" alt="Screenshot"/> <img src="screenshots/light_4_theme_options.png" height="400" alt="Screenshot"/> <img src="screenshots/dark_1_welcome.png" height="400" alt="Screenshot"/> <img src="screenshots/smart_dark_2_preferences.png" height="400" alt="Screenshot"/> <img src="screenshots/dark_3_settings.png" height="400" alt="Screenshot"/> <img src="screenshots/dark_4_theme_options.png" height="400" alt="Screenshot"/> 
 
 Getting Started
 ---------------
