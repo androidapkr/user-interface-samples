@@ -23,10 +23,19 @@
         <item name="colorError">@color/error</item>
 
         <item name="android:textColor">?attr/colorOnBackground</item>
-        <item name="android:textColorPrimary">#FFF</item>
-        <item name="android:textColorSecondary">?attr/colorOnBackground</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+
         <item name="colorControlNormal">?attr/colorOnBackground</item>
 
-        <item name="fontFamily">@font/nunito_regular</item>
+        <item name="fontFamily">@font/nunito_semi_bold</item>
+
+        <item name="preferenceCategoryTitleTextAppearance">@style/CustomPreferenceCategoryTitleAppearance</item>
     </style>
+
+    <style name="CustomPreferenceCategoryTitleAppearance" parent="TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/nunito_semi_bold</item>
+    </style>
+
 </resources>
