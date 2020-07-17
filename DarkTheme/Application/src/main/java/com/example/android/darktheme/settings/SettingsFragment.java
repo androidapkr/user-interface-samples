@@ -14,18 +14,20 @@
  * limitations under the License.
  */
 
-package com.example.android.darktheme;
+package com.example.android.darktheme.settings;
 
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
+import com.example.android.darktheme.R;
+import com.example.android.darktheme.ThemeHelper;
+
 public class SettingsFragment extends PreferenceFragmentCompat {
 
-    static final String TAG = "SettingsFragmentTag";
+    public static final String TAG = "SettingsFragmentTag";
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -33,15 +35,16 @@ public class SettingsFragment extends PreferenceFragmentCompat {
 
         ListPreference themePreference = findPreference("themePref");
         if (themePreference != null) {
-            themePreference.setOnPreferenceChangeListener(
-                    new Preference.OnPreferenceChangeListener() {
-                        @Override
-                        public boolean onPreferenceChange(Preference preference, Object newValue) {
-                            String themeOption = (String) newValue;
-                            ThemeHelper.applyTheme(themeOption);
-                            return true;
-                        }
-                    });
+            themePreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    if (preference.getKey().equals("themePref")) {
+                        String themeOption = (String) newValue;
+                        ThemeHelper.applyTheme(themeOption);
+                    }
+                    return true;
+                }
+            });
         }
     }
 }

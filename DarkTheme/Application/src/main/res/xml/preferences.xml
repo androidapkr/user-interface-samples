@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2019 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,20 +15,62 @@
   -->
 
 <androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:key="theme_purchase"
+        app:title="Purchase">
+
+        <ListPreference
+            app:key="themePurchase"
+            app:title="Purchase Pro" />
+        <ListPreference
+            app:key="themeRestore"
+            app:title="Restore" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         app:key="theme_category"
         app:title="Theme">
 
         <ListPreference
-            app:key="themePref"
-            app:title="Choose theme"
             app:defaultValue="default"
             app:dialogTitle="Choose theme"
             app:entries="@array/themeListArray"
             app:entryValues="@array/themeEntryArray"
-            app:useSimpleSummaryProvider="true"/>
+            app:key="themePref"
+            app:title="Choose theme"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="themeFAQs"
+            app:title="FAQs" />
+        <ListPreference
+            app:key="themePrivacyPolicy"
+            app:title="Privacy &amp; Policy" />
+        <ListPreference
+            app:key="themeOpenSourceLibrary"
+            app:title="Open Source Library" />
 
     </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="theme_social"
+        app:title="Social">
+
+        <ListPreference
+            app:key="themeFacebook"
+            app:title="Facebook" />
+        <ListPreference
+            app:key="themeInstagram"
+            app:title="Instagram" />
+        <ListPreference
+            app:key="themeTwitter"
+            app:title="Twitter" />
+        <ListPreference
+            app:key="themePinterest"
+            app:title="Pinterest" />
+
+    </PreferenceCategory>
+
 
 </androidx.preference.PreferenceScreen>

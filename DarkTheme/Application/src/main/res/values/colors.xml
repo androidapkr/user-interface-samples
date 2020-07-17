@@ -21,5 +21,5 @@
     <color name="primary">#1976D2</color> <!-- Blue 700 -->
     <color name="secondary">#F57C00</color> <!-- Orange 700 -->
     <color name="error">#E53935</color> <!-- Red 600 -->
-
+    <color name="colorOnBackground">#FFFFFF</color>
 </resources>
