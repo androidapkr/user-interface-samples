@@ -17,6 +17,7 @@
 package com.example.android.darktheme.settings;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -47,4 +48,11 @@ public class SettingsFragment extends PreferenceFragmentCompat {
             });
         }
     }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        Log.d("_TAG_", "SettingsFragment: 41 : " + preference.getKey() + " : " + preference.getTitle());
+        return true;
+    }
+
 }

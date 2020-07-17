@@ -4,27 +4,27 @@
         app:key="theme_purchase"
         app:title="Purchase">
 
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themePurchase"
             app:title="Purchase Pro" />
 
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeTire1"
             app:title="Subscribe Tire I" />
 
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeTire2"
             app:title="Subscribe Tire II" />
 
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeTire3"
             app:title="Subscribe Tire III" />
 
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeRestore"
             app:title="Restore" />
@@ -45,38 +45,42 @@
             app:title="Choose theme"
             app:useSimpleSummaryProvider="true" />
 
-        <ListPreference
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="theme_help"
+        app:title="Help">
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeFAQs"
             app:title="FAQs" />
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themePrivacyPolicy"
             app:title="Privacy &amp; Policy" />
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeOpenSourceLibrary"
             app:title="Open Source Library" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
         app:key="theme_social"
         app:title="Social">
 
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeFacebook"
             app:title="Facebook" />
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeInstagram"
             app:title="Instagram" />
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themeTwitter"
             app:title="Twitter" />
-        <ListPreference
+        <Preference
             app:icon="@drawable/ic_baseline_adjust_24"
             app:key="themePinterest"
             app:title="Pinterest" />
