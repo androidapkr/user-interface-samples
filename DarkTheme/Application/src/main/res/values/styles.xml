@@ -16,7 +16,7 @@
 
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="DarkThemeApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="PrimaryColorThemeApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary</item>
         <item name="colorSecondary">@color/secondary</item>
@@ -34,12 +34,37 @@
         <item name="preferenceCategoryTitleTextAppearance">
             @style/CustomPreferenceCategoryTitleAppearance
         </item>
-
-        <item name="materialButtonStyle">@style/MyButtonTheme</item>
-
+        <item name="materialButtonStyle">@style/PrimaryColorButtonTheme</item>
     </style>
 
-    <style name="DarkThemeApp.Base" parent="@style/DarkThemeApp">
+    <style name="WhiteColorThemeApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_light</item>
+        <item name="colorPrimaryDark">@color/primary_light</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorError">@color/error</item>
+
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+
+        <item name="android:textColorPrimary">?attr/colorOnBackground</item>
+
+        <item name="colorControlNormal">?attr/colorOnBackground</item>
+
+        <item name="fontFamily">@font/nunito_semi_bold</item>
+
+        <item name="preferenceCategoryTitleTextAppearance">
+            @style/CustomPreferenceCategoryTitleAppearance
+        </item>
+        <item name="materialButtonStyle">@style/PrimaryColorButtonTheme</item>
+        <item name="buttonStyle">@style/PrimaryColorButtonTheme</item>
+
+        <item name="alertDialogTheme">@style/MyAlertDialogTheme</item>
+        <item name="android:alertDialogTheme">@style/MyAlertDialogTheme</item>
+
+        <item name="materialAlertDialogTheme">@style/MyAlertDialogTheme</item>
+    </style>
+
+    <style name="DarkThemeApp.Base" parent="@style/WhiteColorThemeApp">
         <item name="android:windowLightNavigationBar" tools:targetApi="p">true</item>
         <item name="android:navigationBarColor" tools:targetApi="p">@color/navigationBarColor
         </item>
@@ -49,10 +74,27 @@
         <item name="fontFamily">@font/nunito_semi_bold</item>
     </style>
 
-    <style name="MyButtonTheme" parent="Widget.MaterialComponents.Button">
+    <style name="PrimaryColorButtonTheme" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">@color/primary</item>
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
         <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MyAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/MyAlertDialogTheme.Button</item>
+        <item name="buttonBarNeutralButtonStyle">@style/MyAlertDialogTheme.Button</item>
+        <item name="buttonBarPositiveButtonStyle">@style/MyAlertDialogTheme.Button</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MyAlertDialogTheme.Text</item>
+        <item name="titleTextAppearance">@style/MyAlertDialogTheme.Text</item>
+    </style>
+
+    <style name="MyAlertDialogTheme.Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="rippleColor">@color/ripple_material</item>
+    </style>
+
+    <style name="MyAlertDialogTheme.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/secondary</item>
     </style>
 
 </resources>

@@ -16,7 +16,7 @@
 
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="DarkThemeApp.Base" parent="@style/DarkThemeApp">
+    <style name="DarkThemeApp.Base" parent="@style/WhiteColorThemeApp">
         <item name="android:navigationBarColor" tools:targetApi="p">@color/navigationBarColor</item>
     </style>
 

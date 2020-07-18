@@ -18,7 +18,8 @@
 <resources>
 
     <!-- app palette -->
-    <color name="primary">#64B5F6</color> <!-- Blue 300 -->
+    <color name="primary">#000000</color> <!-- Blue 300 -->
+    <color name="primary_light">#000000</color>
     <color name="secondary">#FFCC80</color> <!-- Orange 200 -->
     <color name="error">#Ef9A9A</color> <!-- Red 200 -->
 
@@ -30,4 +31,7 @@
     <color name="colorOnBackground">#000000</color>
 
     <color name="navigationBarColor">#000000</color>
+    <color name="alertButtonTextColor">#FFFFFF</color>
+
+    <color name="ripple_material">#33ffffff</color>
 </resources>

@@ -16,5 +16,6 @@ public class HomeActivity extends AppCompatActivity {
 
 
         findViewById(R.id.button_setting).setOnClickListener(view -> startActivityForResult(new Intent(HomeActivity.this, SettingActivity.class), 1001));
+        findViewById(R.id.button_setting).performClick();
     }
 }
