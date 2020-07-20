@@ -45,15 +45,15 @@
 
             <include
                 layout="@layout/view_slider"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
             <include
                 layout="@layout/view_chips"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
             <include
                 layout="@layout/view_fab"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
             <include
                 layout="@layout/view_button"
@@ -61,24 +61,23 @@
 
             <include
                 layout="@layout/view_spinner"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
             <include
                 layout="@layout/view_check_box_radio_spinner"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
             <include
                 layout="@layout/view_edit_text"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
             <include
                 layout="@layout/view_text_view"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
             <include
                 layout="@layout/view_progress_bar"
-                android:visibility="gone" />
-
+                android:visibility="visible" />
 
         </LinearLayout>
 

@@ -1,24 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (C) 2019 The Android Open Source Project
-  ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~
-  ~ http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  -->
-
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="PrimaryColorThemeApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorPrimary">@color/secondary</item>
+        <item name="colorPrimaryDark">@color/secondary</item>
         <item name="colorSecondary">@color/secondary</item>
         <item name="colorError">@color/error</item>
 
@@ -43,6 +28,8 @@
         <item name="colorSecondary">@color/secondary</item>
         <item name="colorError">@color/error</item>
 
+        <item name="android:windowBackground">@color/windowBackground</item>
+
         <item name="android:textColor">?attr/colorOnBackground</item>
         <item name="android:textColorSecondary">@color/textColorSecondary</item>
 
@@ -55,8 +42,6 @@
         <item name="preferenceCategoryTitleTextAppearance">
             @style/CustomPreferenceCategoryTitleAppearance
         </item>
-        <!--<item name="materialButtonStyle">@style/MyButton</item>
-        <item name="buttonStyle">@style/MyButton</item>-->
 
         <item name="alertDialogTheme">@style/MyAlertDialogTheme</item>
         <item name="android:alertDialogTheme">@style/MyAlertDialogTheme</item>
@@ -66,6 +51,7 @@
         <item name="navigationViewStyle">@style/MyBottomNavigationView</item>
         <item name="textInputStyle">@style/MyTextInputLayout</item>
         <item name="spinnerStyle">@style/MySpinner</item>
+
 
     </style>
 
@@ -135,7 +121,6 @@
     <style name="MySlider.Steps" parent="Widget.MaterialComponents.Slider">
         <item name="thumbColor">@color/secondary</item>
 
-        <!--<item name="trackColor">@color/light_gray</item>-->
         <item name="trackColorActive">@color/secondary</item>
         <item name="trackColorInactive">@color/light_gray</item>
 
@@ -192,7 +177,7 @@
 
     <style name="MySpinner" parent="Widget.AppCompat.Spinner.Underlined">
         <!--<item name="background">@drawable/spinner_background</item>-->
-        <item name="popupMenuBackground">@color/text_input_background</item>
+        <item name="popupMenuBackground">@color/light_gray</item>
     </style>
 
 
@@ -253,14 +238,14 @@
 
     <style name="MyButton.Stroke" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:textColor">@color/secondary</item>
-        <item name="strokeColor">@color/text_input_background</item>
-        <item name="strokeWidth">@dimen/dp1_5</item>
-        <item name="rippleColor">@color/secondary</item>
+        <item name="strokeColor">@color/light_gray</item>
+        <item name="strokeWidth">@dimen/dp1_1</item>
+        <item name="rippleColor">@color/ripple_material</item>
     </style>
 
     <style name="MyButton.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textColor">@color/secondary</item>
-        <item name="rippleColor">@color/secondary</item>
+        <item name="rippleColor">@color/ripple_material</item>
     </style>
 
     <style name="MyButton.Disable" parent="Widget.MaterialComponents.Button.UnelevatedButton">
@@ -276,7 +261,7 @@
         <item name="android:textColor">@color/color_toggle_button</item>
         <item name="strokeColor">@color/color_toggle_button</item>
         <item name="strokeWidth">@dimen/dp1_5</item>
-        <item name="rippleColor">@color/secondary</item>
+        <item name="rippleColor">@color/ripple_material</item>
     </style>
 
     <style name="MyButton.Toggle.Button.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
@@ -292,7 +277,7 @@
         <item name="strokeColor">@color/color_toggle_button</item>
         <item name="iconTint">@color/color_toggle_button</item>
         <item name="strokeWidth">@dimen/dp1_5</item>
-        <item name="rippleColor">@color/secondary</item>
+        <item name="rippleColor">@color/ripple_material</item>
     </style>
 
     <style name="MyProgressBar.Circle" parent="Widget.MaterialComponents.ProgressIndicator.Circular.Indeterminate">

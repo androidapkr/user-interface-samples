@@ -28,6 +28,7 @@
     <dimen name="dp4">4dp</dimen>
     <dimen name="dp1">1dp</dimen>
     <dimen name="dp1_5">1.5dp</dimen>
+    <dimen name="dp1_1">1.1dp</dimen>
     <dimen name="dp2">2dp</dimen>
     <dimen name="dp48">48dp</dimen>
     <dimen name="dp64">64dp</dimen>
