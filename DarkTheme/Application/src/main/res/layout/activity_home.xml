@@ -15,6 +15,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_components"
+        style="@style/MyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -25,6 +26,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_setting"
+        style="@style/MyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -33,4 +35,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp16"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/seek_bar"
+            app:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.slider.Slider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginBottom="@dimen/dp4"
+                android:value="0"
+                android:valueFrom="-1"
+                android:valueTo="1" />
+
+            <com.google.android.material.slider.Slider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginBottom="@dimen/dp4"
+                android:stepSize="1"
+                android:value="50"
+                android:valueFrom="0"
+                android:valueTo="100" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginBottom="@dimen/dp4"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:values="@array/initial_slider_values" />
+
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

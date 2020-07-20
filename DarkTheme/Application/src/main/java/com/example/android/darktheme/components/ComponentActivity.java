@@ -56,10 +56,12 @@ public class ComponentActivity extends AppCompatActivity {
         textInputLayout = findViewById(R.id.text_input_layout_outline_box);
 
         textInputLayoutEdit = findViewById(R.id.text_input_edit_layout_outline_box);
+        textInputLayout.setErrorEnabled(false);
+
         textInputLayoutEdit.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                textInputLayout.setErrorEnabled(false);
+
             }
 
             @Override
@@ -77,7 +79,6 @@ public class ComponentActivity extends AppCompatActivity {
                 validateEditText(((EditText) v).getText());
             }
         });
-
 
         myProgressBarCircleDeterminate = findViewById(R.id.myProgressBarCircleDeterminate);
         myProgressBarCircleDeterminate.setProgress(progress);

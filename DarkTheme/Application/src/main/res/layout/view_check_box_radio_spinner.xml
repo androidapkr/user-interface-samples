@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/radio_button_group"
+        app:textAllCaps="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/radio_action_yes">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_action_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_action_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/check_box_group"
+        app:textAllCaps="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/check_box_action_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orange" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/check_box_action_apple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apple" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/check_box_action_banana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/banana" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/txt_switch"
+        app:textAllCaps="true" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_on_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_sure" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginBottom="@dimen/dp32"
+        android:alpha="0.2"
+        android:background="@color/textColorSecondary" />
+</LinearLayout>

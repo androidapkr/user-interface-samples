@@ -54,5 +54,19 @@
     <string name="button_2">Button 2</string>
     <string name="button_3">Button 3</string>
     <string name="progress_bar">Progress Bar</string>
+    <string name="check_box_group">CheckBox</string>
+    <string name="orange">Orange</string>
+    <string name="apple">Apple</string>
+    <string name="banana">Banana</string>
+    <string name="are_you_sure">Are you sure ?</string>
+    <string name="txt_switch">Switch</string>
+    <string name="home">HOME</string>
+    <string name="chip1">Chip 1</string>
+    <string name="chip2">Chip 2</string>
+    <string name="chip3">Chip3</string>
+    <string name="chip4">Chip 4</string>
+    <string name="default_chip">Chip Action</string>
+    <string name="seek_bar">SeekBar</string>
+    <string name="chip">Chip</string>
 
 </resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp16"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/seek_bar"
+        app:textAllCaps="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.slider.Slider
+            style="@style/MySlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp4"
+            android:value="0"
+            android:valueFrom="-1"
+            android:valueTo="1" />
+
+        <com.google.android.material.slider.Slider
+            style="@style/MySlider.Steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp4"
+            android:stepSize="1"
+            android:value="50"
+            android:valueFrom="0"
+            android:valueTo="100" />
+
+        <com.google.android.material.slider.RangeSlider
+            style="@style/MySlider.Track"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp4"
+            android:valueFrom="0.0"
+            android:valueTo="100.0"
+            app:values="@array/initial_slider_values" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginBottom="@dimen/dp32"
+        android:alpha="0.2"
+        android:background="@color/textColorSecondary" />
+</LinearLayout>

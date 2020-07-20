@@ -102,6 +102,73 @@
         <item name="backgroundTint">?attr/colorOnBackground</item>
     </style>
 
+    <style name="MySlider" parent="Widget.MaterialComponents.Slider">
+        <item name="thumbColor">@color/secondary</item>
+
+        <item name="trackColor">@color/light_gray</item>
+
+        <item name="trackColorActive">@color/secondary</item>
+        <item name="trackColorInactive">@color/light_gray</item>
+
+        <item name="labelStyle">@style/Widget.MaterialComponents.Tooltip</item>
+
+        <item name="thumbElevation">@dimen/dp2</item>
+
+        <item name="thumbRadius">@dimen/dp12</item>
+        <item name="trackHeight">@dimen/dp2</item>
+    </style>
+
+    <style name="MySlider.Track" parent="Widget.MaterialComponents.Slider">
+        <item name="thumbColor">@color/secondary</item>
+
+        <item name="trackColorActive">@color/secondary</item>
+        <item name="trackColorInactive">@color/light_gray</item>
+
+        <item name="labelStyle">@style/Widget.MaterialComponents.Tooltip</item>
+
+        <item name="thumbElevation">@dimen/dp2</item>
+
+        <item name="thumbRadius">@dimen/dp12</item>
+        <item name="trackHeight">@dimen/dp2</item>
+    </style>
+
+    <style name="MySlider.Steps" parent="Widget.MaterialComponents.Slider">
+        <item name="thumbColor">@color/secondary</item>
+
+        <!--<item name="trackColor">@color/light_gray</item>-->
+        <item name="trackColorActive">@color/secondary</item>
+        <item name="trackColorInactive">@color/light_gray</item>
+
+        <item name="tickColorActive">@color/secondary</item>
+        <item name="tickColorInactive">@color/light_gray</item>
+
+        <item name="labelStyle">@style/MySlider.Label</item>
+
+        <item name="thumbElevation">@dimen/dp2</item>
+
+        <item name="thumbRadius">@dimen/dp12</item>
+        <item name="trackHeight">@dimen/dp2</item>
+
+        <item name="fontFamily">@font/nunito_semi_bold</item>
+
+    </style>
+
+    <style name="MySlider.Label" parent="@style/Widget.MaterialComponents.Tooltip">
+        <item name="android:textAppearance">@style/MySlider.Label.Tooltip.Text</item>
+        <item name="shapeAppearance">@style/MySlider.Label.Tooltip.Shape</item>
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="fontFamily">@font/nunito_semi_bold</item>
+    </style>
+
+    <style name="MySlider.Label.Tooltip.Text" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/nunito_regular</item>
+    </style>
+
+    <style name="MySlider.Label.Tooltip.Shape" parent="ShapeAppearance.MaterialComponents.Tooltip">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp4</item>
+    </style>
+
     <style name="MyTextInputLayout" parent="Widget.Design.TextInputLayout">
 
     </style>
@@ -126,6 +193,51 @@
     <style name="MySpinner" parent="Widget.AppCompat.Spinner.Underlined">
         <!--<item name="background">@drawable/spinner_background</item>-->
         <item name="popupMenuBackground">@color/text_input_background</item>
+    </style>
+
+
+    <style name="MyChip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">@color/chip_state_list_text</item>
+        <item name="chipBackgroundColor">@color/chip_state_list_background</item>
+    </style>
+
+    <style name="MyChip.Action.Icon" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="chipBackgroundColor">@color/secondary</item>
+        <item name="chipIconTint">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MyChip.Filter.Icon" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="chipBackgroundColor">@color/secondary</item>
+        <item name="chipIconTint">@color/textColorPrimary</item>
+        <item name="closeIconTint">@color/textColorPrimary</item>
+        <item name="iconTint">@color/textColorPrimary</item>
+        <item name="checkedIconTint">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MyChip.Entry.Icon" parent="Widget.MaterialComponents.Chip.Entry">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="chipBackgroundColor">@color/secondary</item>
+        <item name="chipIconTint">@color/textColorPrimary</item>
+        <item name="closeIconTint">@color/textColorPrimary</item>
+        <item name="android:checkable">false</item>
+        <item name="chipIconSize">@dimen/dp16</item>
+        <item name="closeIconSize">@dimen/dp16</item>
+        <item name="chipStartPadding">8dp</item>
+    </style>
+
+    <style name="MyFloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="tint">@color/textColorPrimary</item>
+        <item name="iconTint">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MyExtendedFloatingActionButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="tint">@color/textColorPrimary</item>
+        <item name="iconTint">@color/textColorPrimary</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
     </style>
 
     <style name="MyButton" parent="Widget.MaterialComponents.Button">
@@ -236,4 +348,5 @@
         <item name="indicatorColor">@color/secondary</item>
         <item name="trackColor">@color/text_input_background</item>
     </style>
+
 </resources>
