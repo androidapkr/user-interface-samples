@@ -27,6 +27,7 @@ public class ComponentActivity extends AppCompatActivity {
     TextInputEditText textInputLayoutEdit;
     TextInputLayout textInputLayout;
     ProgressIndicator myProgressBarCircleDeterminate;
+    ProgressIndicator myProgressBarLinearDeterminate;
     int progress = 90;
 
     @Override
@@ -81,13 +82,18 @@ public class ComponentActivity extends AppCompatActivity {
         myProgressBarCircleDeterminate = findViewById(R.id.myProgressBarCircleDeterminate);
         myProgressBarCircleDeterminate.setProgress(progress);
 
+        myProgressBarLinearDeterminate = findViewById(R.id.myProgressBarDeterminate);
+        myProgressBarLinearDeterminate.setProgress(progress);
+
         SeekBar seekBarForProgressBar = findViewById(R.id.seekbar_for_progress);
         seekBarForProgressBar.setProgress(progress);
+
         seekBarForProgressBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 progress = i;
                 myProgressBarCircleDeterminate.setProgress(progress);
+                myProgressBarLinearDeterminate.setProgress(progress);
             }
 
             @Override

@@ -187,7 +187,16 @@
         <item name="indicatorColor">@color/secondary</item>
     </style>
 
+    <style name="MyProgressBar.Linear" parent="Widget.MaterialComponents.ProgressIndicator.Linear.Indeterminate">
+        <item name="indicatorColor">@color/secondary</item>
+    </style>
+
     <style name="MyProgressBar.Circle.Track" parent="Widget.MaterialComponents.ProgressIndicator.Circular.Indeterminate">
+        <item name="indicatorColor">@color/secondary</item>
+        <item name="trackColor">@color/text_input_background</item>
+    </style>
+
+    <style name="MyProgressBar.Linear.Track" parent="Widget.MaterialComponents.ProgressIndicator.Linear.Indeterminate">
         <item name="indicatorColor">@color/secondary</item>
         <item name="trackColor">@color/text_input_background</item>
     </style>
@@ -196,7 +205,15 @@
         <item name="indicatorColor">@color/secondary</item>
         <item name="trackColor">@color/text_input_background</item>
         <item name="progressBarPadding">2dp</item>
-        <item name="indicatorType">circular</item>
+        <item name="circularRadius">18dp</item>
+        <item name="circularInset">16dp</item>
+        <item name="indicatorWidth">2dp</item>
+    </style>
+
+    <style name="MyProgressBar.Linear.Track.Indicator" parent="Widget.MaterialComponents.ProgressIndicator.Linear.Indeterminate">
+        <item name="indicatorColor">@color/secondary</item>
+        <item name="trackColor">@color/text_input_background</item>
+        <item name="progressBarPadding">2dp</item>
         <item name="circularRadius">18dp</item>
         <item name="circularInset">16dp</item>
         <item name="indicatorWidth">2dp</item>
@@ -206,7 +223,17 @@
         <item name="indicatorColors">@array/color_list</item>
     </style>
 
+    <style name="MyProgressBar.Linear.Multi.Color" parent="Widget.MaterialComponents.ProgressIndicator.Linear.Indeterminate">
+        <item name="indicatorColors">@array/color_list</item>
+    </style>
+
     <style name="MyProgressBar.Circle.Determinate" parent="Widget.MaterialComponents.ProgressIndicator.Circular.Determinate">
         <item name="indicatorColor">@color/secondary</item>
+        <item name="trackColor">@color/text_input_background</item>
+    </style>
+
+    <style name="MyProgressBar.Linear.Determinate" parent="Widget.MaterialComponents.ProgressIndicator.Linear.Determinate">
+        <item name="indicatorColor">@color/secondary</item>
+        <item name="trackColor">@color/text_input_background</item>
     </style>
 </resources>

@@ -82,11 +82,51 @@
                     android:id="@+id/myProgressBarCircleDeterminate"
                     style="@style/MyProgressBar.Circle.Determinate"
                     android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.progressindicator.ProgressIndicator
+                    style="@style/MyProgressBar.Linear"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.progressindicator.ProgressIndicator
+                    style="@style/MyProgressBar.Linear.Track"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.progressindicator.ProgressIndicator
+                    style="@style/MyProgressBar.Linear.Track.Indicator"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.progressindicator.ProgressIndicator
+                    style="@style/MyProgressBar.Linear.Multi.Color"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.progressindicator.ProgressIndicator
+                    android:id="@+id/myProgressBarDeterminate"
+                    style="@style/MyProgressBar.Linear.Determinate"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp4"
                     android:layout_height="wrap_content" />
 
                 <androidx.appcompat.widget.AppCompatSeekBar
                     android:id="@+id/seekbar_for_progress"
                     android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp4"
                     android:layout_height="wrap_content"
                     android:max="100"
                     android:progress="0" />
