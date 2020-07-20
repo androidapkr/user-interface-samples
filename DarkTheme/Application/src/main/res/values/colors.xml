@@ -20,7 +20,7 @@
     <!-- app palette -->
     <color name="primary">#1976D2</color> <!-- Blue 700 -->
     <color name="primary_light">#FFFFFF</color> <!-- Blue 700 -->
-    <color name="secondary">#F57C00</color> <!-- Orange 700 -->
+    <color name="secondary">#624E9F</color> <!-- Orange 700 -->
     <color name="error">#E53935</color> <!-- Red 600 -->
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="textColorSecondary">#5E5E5E</color>
@@ -29,4 +29,12 @@
     <color name="alertButtonTextColor">#000000</color>
 
     <color name="ripple_material">#1f000000</color>
+
+    <color name="text_input_background">#F8F8F8</color>
+
+
+    <integer-array name="color_list">
+        <item>@color/secondary</item>
+        <item>@color/primary</item>
+    </integer-array>
 </resources>

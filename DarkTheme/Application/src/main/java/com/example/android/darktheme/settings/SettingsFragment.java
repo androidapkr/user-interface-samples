@@ -23,6 +23,7 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
+import com.example.android.darktheme.DarkThemeApplication;
 import com.example.android.darktheme.R;
 import com.example.android.darktheme.ThemeHelper;
 
@@ -41,6 +42,8 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     if (preference.getKey().equals("themePref")) {
                         String themeOption = (String) newValue;
+                        Log.d("_TAG_", "SettingsFragment: 44 : Theme " + themeOption);
+                        DarkThemeApplication.saveTheme(getContext(), themeOption);
                         ThemeHelper.applyTheme(themeOption);
                     }
                     return true;

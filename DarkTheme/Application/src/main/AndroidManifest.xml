@@ -24,6 +24,10 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name" />
+        <activity
+            android:name=".components.ComponentActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

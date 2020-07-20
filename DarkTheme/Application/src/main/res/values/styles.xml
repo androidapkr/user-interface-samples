@@ -34,7 +34,7 @@
         <item name="preferenceCategoryTitleTextAppearance">
             @style/CustomPreferenceCategoryTitleAppearance
         </item>
-        <item name="materialButtonStyle">@style/PrimaryColorButtonTheme</item>
+        <item name="materialButtonStyle">@style/MyButton</item>
     </style>
 
     <style name="WhiteColorThemeApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
@@ -55,16 +55,22 @@
         <item name="preferenceCategoryTitleTextAppearance">
             @style/CustomPreferenceCategoryTitleAppearance
         </item>
-        <item name="materialButtonStyle">@style/PrimaryColorButtonTheme</item>
-        <item name="buttonStyle">@style/PrimaryColorButtonTheme</item>
+        <!--<item name="materialButtonStyle">@style/MyButton</item>
+        <item name="buttonStyle">@style/MyButton</item>-->
 
         <item name="alertDialogTheme">@style/MyAlertDialogTheme</item>
         <item name="android:alertDialogTheme">@style/MyAlertDialogTheme</item>
 
         <item name="materialAlertDialogTheme">@style/MyAlertDialogTheme</item>
+
+        <item name="navigationViewStyle">@style/MyBottomNavigationView</item>
+        <item name="textInputStyle">@style/MyTextInputLayout</item>
+        <item name="spinnerStyle">@style/MySpinner</item>
+
     </style>
 
     <style name="DarkThemeApp.Base" parent="@style/WhiteColorThemeApp">
+        <item name="android:windowLightStatusBar" tools:targetApi="p">true</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="p">true</item>
         <item name="android:navigationBarColor" tools:targetApi="p">@color/navigationBarColor
         </item>
@@ -74,11 +80,6 @@
         <item name="fontFamily">@font/nunito_semi_bold</item>
     </style>
 
-    <style name="PrimaryColorButtonTheme" parent="Widget.MaterialComponents.Button">
-        <item name="backgroundTint">@color/primary</item>
-        <item name="android:textColorPrimary">@color/textColorPrimary</item>
-        <item name="android:textColor">@color/textColorPrimary</item>
-    </style>
 
     <style name="MyAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
         <item name="buttonBarNegativeButtonStyle">@style/MyAlertDialogTheme.Button</item>
@@ -97,4 +98,115 @@
         <item name="android:textColor">@color/secondary</item>
     </style>
 
+    <style name="MyBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="backgroundTint">?attr/colorOnBackground</item>
+    </style>
+
+    <style name="MyTextInputLayout" parent="Widget.Design.TextInputLayout">
+
+    </style>
+
+    <style name="MyTextInputLayout.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="errorEnabled">true</item>
+        <item name="colorError">@color/secondary</item>
+        <item name="hintTextColor">@color/secondary</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="boxStrokeColor">@color/secondary</item>
+        <item name="boxBackgroundColor">@color/text_input_background</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+    </style>
+
+    <style name="MyTextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">@color/secondary</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="boxStrokeColor">@color/secondary</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+    </style>
+
+    <style name="MySpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <!--<item name="background">@drawable/spinner_background</item>-->
+        <item name="popupMenuBackground">@color/text_input_background</item>
+    </style>
+
+    <style name="MyButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MyButton.Icon" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="iconTint">@color/textColorPrimary</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MyButton.Stroke" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/secondary</item>
+        <item name="strokeColor">@color/text_input_background</item>
+        <item name="strokeWidth">@dimen/dp1_5</item>
+        <item name="rippleColor">@color/secondary</item>
+    </style>
+
+    <style name="MyButton.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/secondary</item>
+        <item name="rippleColor">@color/secondary</item>
+    </style>
+
+    <style name="MyButton.Disable" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textColor">@color/textColorSecondary</item>
+        <item name="backgroundTint">@color/text_input_background</item>
+    </style>
+
+    <style name="MyButton.Toggle" parent="Widget.MaterialComponents.MaterialButtonToggleGroup">
+        <item name="singleSelection">true</item>
+    </style>
+
+    <style name="MyButton.Toggle.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/color_toggle_button</item>
+        <item name="strokeColor">@color/color_toggle_button</item>
+        <item name="strokeWidth">@dimen/dp1_5</item>
+        <item name="rippleColor">@color/secondary</item>
+    </style>
+
+    <style name="MyButton.Toggle.Button.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+
+        <item name="android:textColor">@color/color_toggle_button</item>
+        <item name="strokeColor">@color/color_toggle_button</item>
+        <item name="iconTint">@color/color_toggle_button</item>
+        <item name="strokeWidth">@dimen/dp1_5</item>
+        <item name="rippleColor">@color/secondary</item>
+    </style>
+
+    <style name="MyProgressBar.Circle" parent="Widget.MaterialComponents.ProgressIndicator.Circular.Indeterminate">
+        <item name="indicatorColor">@color/secondary</item>
+    </style>
+
+    <style name="MyProgressBar.Circle.Track" parent="Widget.MaterialComponents.ProgressIndicator.Circular.Indeterminate">
+        <item name="indicatorColor">@color/secondary</item>
+        <item name="trackColor">@color/text_input_background</item>
+    </style>
+
+    <style name="MyProgressBar.Circle.Track.Indicator" parent="Widget.MaterialComponents.ProgressIndicator.Circular.Indeterminate">
+        <item name="indicatorColor">@color/secondary</item>
+        <item name="trackColor">@color/text_input_background</item>
+        <item name="progressBarPadding">2dp</item>
+        <item name="indicatorType">circular</item>
+        <item name="circularRadius">18dp</item>
+        <item name="circularInset">16dp</item>
+        <item name="indicatorWidth">2dp</item>
+    </style>
+
+    <style name="MyProgressBar.Circle.Multi.Color" parent="Widget.MaterialComponents.ProgressIndicator.Circular.Indeterminate">
+        <item name="indicatorColors">@array/color_list</item>
+    </style>
+
+    <style name="MyProgressBar.Circle.Determinate" parent="Widget.MaterialComponents.ProgressIndicator.Circular.Determinate">
+        <item name="indicatorColor">@color/secondary</item>
+    </style>
 </resources>

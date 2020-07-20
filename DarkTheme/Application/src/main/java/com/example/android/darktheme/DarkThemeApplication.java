@@ -17,6 +17,7 @@
 package com.example.android.darktheme;
 
 import android.app.Application;
+import android.content.Context;
 import android.content.SharedPreferences;
 
 import androidx.appcompat.app.AppCompatDelegate;
@@ -24,13 +25,25 @@ import androidx.preference.PreferenceManager;
 
 public class DarkThemeApplication extends Application {
 
+    private static final String THEME_PREF_KEY = "themePref";
+
     public void onCreate() {
         super.onCreate();
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String themePref = sharedPreferences.getString("themePref", ThemeHelper.DEFAULT_MODE);
-        ThemeHelper.applyTheme(themePref);
+        String themePref = sharedPreferences.getString(THEME_PREF_KEY, ThemeHelper.DEFAULT_MODE);
+        if (themePref != null) {
+            ThemeHelper.applyTheme(themePref);
+        }
+    }
+
+    public static void saveTheme(Context context, String theme) {
+        PreferenceManager.getDefaultSharedPreferences(context).edit().putString(THEME_PREF_KEY, theme).apply();
+    }
+
+    public static String getThemePref(Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context).getString(THEME_PREF_KEY, ThemeHelper.DEFAULT_MODE);
     }
 }

@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.android.darktheme.components.ComponentActivity;
 import com.example.android.darktheme.settings.SettingActivity;
 
 public class HomeActivity extends AppCompatActivity {
@@ -14,8 +15,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
         findViewById(R.id.button_setting).setOnClickListener(view -> startActivityForResult(new Intent(HomeActivity.this, SettingActivity.class), 1001));
-        findViewById(R.id.button_setting).performClick();
+        findViewById(R.id.button_components).setOnClickListener(view -> startActivityForResult(new Intent(HomeActivity.this, ComponentActivity.class), 1001));
     }
 }

@@ -30,5 +30,29 @@
     <string name="preferences_explanation">Disclaimer: This screen will only be dark when Dark Mode is forced in the OS settings in Android Q and above.</string>
     <string name="sort">Sort</string>
     <string name="component">Component</string>
+    <string name="title_light">Light</string>
+    <string name="title_dark">Dark</string>
+    <string name="this_is_text_view">This is Text View</string>
+    <string name="this_is_text_view_title">This is Title TextView</string>
+    <string name="this_is_text_view_display">Display1 textView</string>
+    <string name="this_is_text_view_display_2">Display 2 TextView</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="text_view">TextView</string>
+    <string name="edit_text">EditText</string>
+    <string name="edit_text_with_input_layout">EditText with InputLayout</string>
+    <string name="radio_button_group">Radio Button Group</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="app_compat_spinner">AppCompat Spinner</string>
+    <string name="edit_text_invalid_message">Text in between 3 to 6 characters.</string>
+    <string name="button">Button</string>
+    <string name="default_button">Default Button</string>
+    <string name="button_stroke">Stroke Button</string>
+    <string name="button_text">Text Button</string>
+    <string name="button_disable">Disable Button</string>
+    <string name="button_1">Button 1</string>
+    <string name="button_2">Button 2</string>
+    <string name="button_3">Button 3</string>
+    <string name="progress_bar">Progress Bar</string>
 
 </resources>

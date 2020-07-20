@@ -46,7 +46,6 @@
         android:id="@+id/navigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:itemBackground="?attr/colorSurface"
         app:itemIconTint="@color/bottom_nav_item_background"
         app:itemTextColor="@color/bottom_nav_item_background"
         app:layout_constraintBottom_toBottomOf="parent"
