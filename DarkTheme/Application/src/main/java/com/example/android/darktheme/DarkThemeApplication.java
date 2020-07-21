@@ -25,7 +25,7 @@ import androidx.preference.PreferenceManager;
 
 public class DarkThemeApplication extends Application {
 
-    private static final String THEME_PREF_KEY = "themePref";
+
 
     public void onCreate() {
         super.onCreate();
@@ -38,7 +38,7 @@ public class DarkThemeApplication extends Application {
             ThemeHelper.applyTheme(themePref);
         }
     }
-
+    private static final String THEME_PREF_KEY = "themePref";
     public static void saveTheme(Context context, String theme) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putString(THEME_PREF_KEY, theme).apply();
     }

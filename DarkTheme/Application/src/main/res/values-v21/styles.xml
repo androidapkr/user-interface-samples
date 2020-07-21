@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="DarkThemeApp.Base.Light" parent="@style/WhiteColorThemeApp">
+        <item name="android:statusBarColor">@color/alertButtonTextColor</item>
+        <item name="android:navigationBarColor">@color/alertButtonTextColor</item>
+    </style>
+</resources>

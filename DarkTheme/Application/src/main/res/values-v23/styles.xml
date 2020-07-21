@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DarkThemeApp.Base.Light" parent="@style/WhiteColorThemeApp">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/windowBackground
+        </item>
+    </style>
+</resources>

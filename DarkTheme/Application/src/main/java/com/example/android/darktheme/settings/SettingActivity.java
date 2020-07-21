@@ -24,7 +24,6 @@ public class SettingActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.fragment_layout, new SettingsFragment())
