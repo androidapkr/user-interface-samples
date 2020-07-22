@@ -166,6 +166,7 @@
         <item name="boxStrokeColor">@color/secondary</item>
         <item name="boxBackgroundColor">@color/text_input_background</item>
         <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+        <item name="android:theme">@style/MyThemForCursorHandler</item>
     </style>
 
     <style name="MyTextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -173,6 +174,11 @@
         <item name="android:textColor">?attr/colorOnBackground</item>
         <item name="boxStrokeColor">@color/secondary</item>
         <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+        <item name="android:theme">@style/MyThemForCursorHandler</item>
+    </style>
+
+    <style name="MyThemForCursorHandler" parent="ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="colorControlActivated">@color/secondary</item>
     </style>
 
     <style name="MySpinner" parent="Widget.AppCompat.Spinner.Underlined">
